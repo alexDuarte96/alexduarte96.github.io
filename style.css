@@ -1,0 +1,33 @@
+/* Import Roboto font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ------- */
+/* General */
+/* ------- */
+* {
+  font-family: roboto;
+}
+
+
+/* ----- */
+/* Fonts */
+/* ----- */
+
+.W100{
+  font-weight: 100;
+}
+.W300{
+  font-weight: 300;
+}
+.W400{
+  font-weight: 400;
+}
+.W500{
+  font-weight: 500;
+}
+.W700{
+  font-weight: 700;
+}
+.W900{
+  font-weight: 900;
+}
