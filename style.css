@@ -8,11 +8,15 @@
   font-family: roboto;
 }
 
+a {
+  font-style: inherit;
+}
+
+
 
 /* ----- */
 /* Fonts */
 /* ----- */
-
 .W100{
   font-weight: 100;
 }
@@ -31,3 +35,4 @@
 .W900{
   font-weight: 900;
 }
+
