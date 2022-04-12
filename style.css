@@ -1,15 +1,44 @@
 /* Import Roboto font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+/* --------- */
+/* Variables */
+/* --------- */
+
+:root{
+  /* Text */
+  --text-color:#1A1A1A;
+  --secondary-text-color: #777777;
+  --highlight-text-color:#FFE0E0;
+
+  /* Background */
+
+  --body-bright-color:#FFFFFF;
+  --body-dim-color: #F2F2F2;
+
+  /* Font Size */
+  --x-sm-font-size: 13px;
+  --sm-font-size: 14px;
+  --md-font-size: 16px;
+  --lg-font-size: 20px;
+  --xl-font-size: 24px;
+}
+
 /* ------- */
 /* General */
 /* ------- */
 * {
   font-family: roboto;
+  color: var(--text-color);
+  background-color: var(--body-bright-color);
 }
 
 a {
   font-style: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+  font-weight: 900;
 }
 
 
@@ -17,6 +46,8 @@ a {
 /* ----- */
 /* Fonts */
 /* ----- */
+
+/* Weights */
 .W100{
   font-weight: 100;
 }
