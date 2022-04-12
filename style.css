@@ -1,4 +1,4 @@
-/* Import Roboto font*/
+/* Import Roboto Font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* --------- */
@@ -9,10 +9,9 @@
   /* Text */
   --text-color:#1A1A1A;
   --secondary-text-color: #777777;
-  --highlight-text-color:#FFE0E0;
+  --highlight-text-color:#00b7ff;
 
   /* Background */
-
   --body-bright-color:#FFFFFF;
   --body-dim-color: #F2F2F2;
 
@@ -22,6 +21,14 @@
   --md-font-size: 16px;
   --lg-font-size: 20px;
   --xl-font-size: 24px;
+
+  /* Border Radius */
+  /* Border Radius */
+  --x-sm-border-radius: 6px;
+  --sm-border-radius: 8px;
+  --md-border-radius: 12px;
+  --lg-border-radius: 16px;
+  --xl-border-radius: 20px;
 }
 
 /* ------- */
@@ -29,19 +36,26 @@
 /* ------- */
 * {
   font-family: roboto;
-  color: var(--text-color);
-  background-color: var(--body-bright-color);
 }
 
 a {
-  font-style: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
 }
+  a:hover {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+  }
+  a:focus {
+    outline: none;
+  }
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   font-weight: 900;
 }
-
-
 
 /* ----- */
 /* Fonts */
@@ -67,3 +81,175 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+/* Size */
+.text-sm {
+  font-size: var(--sm-font-size);
+}
+.text-md {
+  font-size: var(--md-font-size);
+}
+.text-lg {
+  font-size: var(--lg-font-size);
+}
+.text-xl {
+  font-size: var(--xl-font-size);
+}
+
+
+/* -------- */
+/* Side Bar */
+/* -------- */
+
+#view {
+  overflow-x: hidden;
+}
+
+#sidebar {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar .list-group {
+  width: 16rem;
+}
+
+#content {
+  min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #view #sidebar {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+    margin-left: 0;
+  }
+
+  #content {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #view #sidebar {
+    margin-left: -16rem;
+  }
+}
+
+.sideBar-icon {
+  background-image: url(./icons/sidebar.svg);
+}
+
+
+
+/* ------- */
+/* Buttons */
+/* ------- */
+.btn-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.btn-satisfying {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+  color: white;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(5px);
+  transition: transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  filter: blur(2px);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+      to left,
+      rgb(0, 36, 82) 0%,
+      rgb(0, 90, 207) 12%,
+      rgb(0, 90, 207) 88%,
+      rgb(0, 36, 82) 100%
+    );
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(
+      360deg,
+      rgb(0, 60, 138) 0%,
+      rgb(0, 100, 231) 100%
+    );
+  /*background: rgb(0, 153, 255);*/
+  will-change: transform;
+  transform: translateY(-5px);
+  transition: transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+}
+
+.btn-satisfying:hover {
+  filter: brightness(120%);
+}
+
+.btn-satisfying:hover .front {
+  transform: translateY(-7px);
+  transition: transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.btn-satisfying:active .front {
+  transform: translateY(-1px);
+  transition: transform 34ms;
+}
+
+.btn-satisfying:hover .shadow {
+  transform: translateY(7px);
+  transition: transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.btn-satisfying:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.btn-satisfyingfocus:not(:focus-visible) {
+  outline: none;
+}
