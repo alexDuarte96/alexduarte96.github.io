@@ -108,15 +108,12 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100vh;
   margin-left: -15rem;
   transition: margin 0.25s ease-out;
+  width: 18rem;
 }
 
 #sidebar .sidebar-heading {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;
-}
-
-#sidebar .list-group {
-  width: 16rem;
 }
 
 #content {
@@ -138,7 +135,7 @@ body.sb-sidenav-toggled #view #sidebar {
   }
 
   body.sb-sidenav-toggled #view #sidebar {
-    margin-left: -16rem;
+    margin-left: -18rem;
   }
 }
 
