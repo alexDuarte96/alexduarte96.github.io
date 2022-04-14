@@ -21,8 +21,8 @@
   --md-font-size: 16px;
   --lg-font-size: 20px;
   --xl-font-size: 24px;
+  --xxl-font-size: 28px;
 
-  /* Border Radius */
   /* Border Radius */
   --x-sm-border-radius: 6px;
   --sm-border-radius: 8px;
@@ -94,12 +94,15 @@ h1, h2, h3, h4, h5, h6 {
 .text-xl {
   font-size: var(--xl-font-size);
 }
-
+.text-xxl {
+  font-size: var(--xxl-font-size);
+}
 
 /* -------- */
 /* Side Bar */
 /* -------- */
 
+/* Sidebar */
 #view {
   overflow-x: hidden;
 }
@@ -139,11 +142,6 @@ body.sb-sidenav-toggled #view #sidebar {
   }
 }
 
-.sideBar-icon {
-  background-image: url(./icons/sidebar.svg);
-}
-
-
 
 /* ------- */
 /* Buttons */
@@ -152,6 +150,15 @@ body.sb-sidenav-toggled #view #sidebar {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.btn-sidebar-clicked{
+  padding: 16px 18px;
+  border-radius: 400px;
+  background-color: #00C1FF;
+  display: block;
+  font-weight: 900;
+  color: white;
 }
 
 .btn-satisfying {
