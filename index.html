@@ -25,50 +25,57 @@
 
 
   <body>
-    <!-- <div class="btn-toggle text-lg W900" id="sidebarToggle"><i class="fa-solid fa-bars"></i></div> -->
-    
-    <div class="btn-toggle" id="sidebarToggle">
-      <button class="btn-satisfying">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
+
+    <!-- Sidebar Toggle Button -->  
+    <button class="btn btn-toggle" id="sidebarToggle"><i class="fa-solid fa-bars"></i></button>
 
     <!-- View -->
     <div class="d-flex" id="view">
 
       <!-- Sidebar -->
-      <div class="bg-light mb-auto" id="sidebar" style="padding: 0 1rem;">
-          <br>
-          <!-- Sidebar Head -->
-          <div class="text-xxl W900" style="line-height: normal;">
-            Alejandro
-          </div>
-          <div class="text-lg W900" style="line-height: normal;">
-            Duarte López
-          </div>
+      <div class="bg-light mb-auto p-4" id="sidebar">
           
-          
-          <hr>
+          <!-- Photo -->
           
 
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-              <a href="#" class="btn-sidebar-clicked" aria-current="page">Me</a>
+          <!-- Sidebar Header (Photo and Name) -->
+          <div class="text-center W900 normal-line-height mb-3">
+            <img src="./assets/me.jpg" alt="Alejandro Duarte" class="profile-picture mb-3"></img>
+            <div class="text-xxl">Alejandro</div>
+            <div class="text-lg text-secondary">Duarte López</div>
+          </div>
+          
+          <!-- Sidebar Social Media Icons-->
+          <div class="text-center text-xl">
+            <a href="https://www.youtube.com/c/AlexExplica" target="_blank"><span class="mx-1"><i class="fa-brands fa-youtube icon-youtube"></i></span></a>
+            <a href="https://www.instagram.com/_alexduarte/" target="_blank"><span class="mx-1"><i class="fa-brands fa-instagram icon-instagram"></i></span></a>
+            <a href="https://twitter.com/duarte96d" target="_blank"> <span class="mx-1"><i class="fa-brands fa-twitter icon-twitter"></i></span></a>
+            <a href="https://www.linkedin.com/in/alejandro-duartel/" target="_blank"> <span class="mx-1"><i class="fa-brands fa-linkedin icon-linkedin"></i></span></a>
+            <a href="https://github.com/alexDuarte96" target="_blank"> <span class="mx-1"><i class="fa-brands fa-github icon-github"></i></span></a>
+          </div>
+
+          <hr>
+
+          <!-- Navigation Pills -->
+          <ul class="nav flex-column mb-auto">
+            <li class="btn-sidebar">
+              <a href="#" aria-current="page"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Me</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-dark" aria-current="page">About</a>
+
+            <li class="btn-sidebar">
+              <a href="#about" aria-current="page"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;About</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-dark" aria-current="page">Resume</a>
+            <li class="btn-sidebar">
+              <a href="#resume" aria-current="page"><i class="fa-solid fa-file-lines"></i>&nbsp;&nbsp;Resume</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-dark" aria-current="page">Proyects</a>
+            <li class="btn-sidebar">
+              <a href="#proyects"  aria-current="page"><i class="fa-solid fa-ranking-star"></i>&nbsp;&nbsp;Proyects</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-dark" aria-current="page">Testimonials</a>
+            <li class="btn-sidebar">
+              <a href="#testimonials" aria-current="page"><i class="fa-solid fa-comment-dots"></i>&nbsp;&nbsp;Testimonials</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-dark" aria-current="page">Contact</a>
+            <li class="btn-sidebar">
+              <a href="#contact" aria-current="page"><i class="fa-solid fa-address-card"></i>&nbsp;&nbsp;Contact</a>
             </li>
           </ul>
 
