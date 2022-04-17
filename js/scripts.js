@@ -11,3 +11,27 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+function nightMode(){
+    console.log("Hello");
+    /*
+    nightMode = document.getElementById("nightMode").value;
+    
+    if (nightMode == "day"){
+      //Night Mode
+      document.documentElement.style
+      .setProperty('--body-color', '#262626');
+      document.documentElement.style
+        .setProperty('--bg-color', '#404040');
+        
+      document.getElementById("nightModeBtn").innerHTML = "<i class='fas fa-sun'></i>";
+    } else {
+      //Day Mode
+      document.documentElement.style
+      .setProperty('--body-color', '#F2F2F2');
+      document.documentElement.style
+        .setProperty('--bg-color', '#FFFFFF');
+
+      document.getElementById("nightModeBtn").innerHTML = "<i class='fas fa-moon'></i>";
+    }
+    */
+}

@@ -14,6 +14,7 @@
   /* Background */
   --body-bright-color:#FFFFFF;
   --body-dim-color: #F2F2F2;
+  --sidebar-color: #F8F9FB;
 
   /* Accents */
   --accent-blue-color: #57BEF9;
@@ -125,13 +126,13 @@ hr {
 }
 
 /* Line Height */
-.normal-line-height{
+.line-height-normal{
   line-height: normal;
 }
-.md-line-height{
+.line-height-md{
   line-height: 1.15;
 }
-.bg-line-height{
+.line-height-bg{
   line-height: 1.5;
 }
 
@@ -142,16 +143,41 @@ hr {
 
 /* Sidebar */
 #view {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 #sidebar {
-  min-height: 100vh;
+  position:relative;
+  /*min-height: 100vh;*/
   margin-left: -15rem;
   transition: margin 0.4s ease-out;
   min-width: 15rem;
+
+  background-color: var(--sidebar-color);
 }
 
+.sidebar-sticky{
+  position: sticky;
+  top: 1.5rem;
+}
+@media (max-width: 414px) {
+  .sidebar-sticky{
+    position: sticky;
+    top: -2rem;
+  }
+}
+@media (max-width: 375px) {
+  .sidebar-sticky{
+    position: sticky;
+    top: -6rem;
+  }
+}
+@media (max-width: 320px) {
+  .sidebar-sticky{
+    position: sticky;
+    top: -12.5rem;
+  }
+}
 /*
 #sidebar .sidebar-heading {
   padding: 0.875rem 1.25rem;
@@ -196,7 +222,7 @@ body.sb-sidenav-toggled #view #sidebar {
 }
 
 .btn-toggle {
-  position: absolute;
+  position:fixed;
   background-color: var(--accent-blue-color);
 
   border-radius: 100%;
@@ -210,10 +236,17 @@ body.sb-sidenav-toggled #view #sidebar {
 
     transition: 500ms;
   }
+  
+.btn-night-mode{
+  color:yellow;
+  background-color: black;
+  text-align: center;
+  font-size: var(--lg-font-size);
+}
 
 .btn-sidebar{
   display: block;
-  padding: 16px 18px;
+  padding: 14px 20px;
   border-radius: 400px;
   font-size: var(--lg-font-size);
 
@@ -242,7 +275,7 @@ body.sb-sidenav-toggled #view #sidebar {
 /* Social Media Icons */
 /* ------------------ */
 .profile-picture{
-  width: 10rem;
+  width: 9rem;
   border-radius: 100%;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
