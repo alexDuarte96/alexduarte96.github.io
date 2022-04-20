@@ -147,8 +147,8 @@ hr {
 }
 
 #sidebar {
-  position:relative;
-  /*min-height: 100vh;*/
+  position: relative;
+  min-height: 100vh;
   margin-left: -15rem;
   transition: margin 0.4s ease-out;
   min-width: 15rem;
@@ -158,8 +158,10 @@ hr {
 
 .sidebar-sticky{
   position: sticky;
+  position: -webkit-sticky;
   top: 1.5rem;
 }
+
 @media (max-width: 414px) {
   .sidebar-sticky{
     position: sticky;
@@ -178,6 +180,7 @@ hr {
     top: -12.5rem;
   }
 }
+
 /*
 #sidebar .sidebar-heading {
   padding: 0.875rem 1.25rem;
@@ -260,6 +263,7 @@ body.sb-sidenav-toggled #view #sidebar {
     background-color: var(--body-dim-color);
   }
 
+
 .btn-sidebar-clicked{
   display: block;
   padding: 16px 18px;
@@ -281,6 +285,7 @@ body.sb-sidenav-toggled #view #sidebar {
   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
 }
+
 .icon-youtube {color:#FF0000;}
 
 .icon-instagram {

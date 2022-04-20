@@ -11,6 +11,8 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+
 function nightMode(){
     console.log("Hello");
     /*
