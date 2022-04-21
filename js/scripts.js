@@ -9,8 +9,17 @@ window.addEventListener('DOMContentLoaded', event => {
             localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
         });
     }
-
 });
+
+var resizeId;
+window.addEventListener('resize', function() {
+
+  if (this.innerWidth <= 768){
+    console.log("Pantalla iPad o menor");
+  }
+});
+
+
 
 
 function nightMode(){
