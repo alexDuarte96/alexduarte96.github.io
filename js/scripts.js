@@ -11,13 +11,6 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 });
 
-var resizeId;
-window.addEventListener('resize', function() {
-
-  if (this.innerWidth <= 768){
-    console.log("Pantalla iPad o menor");
-  }
-});
 
 
 

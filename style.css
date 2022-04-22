@@ -136,6 +136,26 @@ hr {
   line-height: 1.5;
 }
 
+.name{
+  font-size: var(--xl-font-size);
+  color: var(--text-color);
+}
+  @media (max-height: 768px) {
+    .name{
+      font-size: var(--lg-font-size);
+    }
+  }
+
+.surname{
+  font-size: var(--lg-font-size);
+  color: var(--secondary-text-color);
+}
+  @media (max-height: 768px) {
+    .surname{
+      font-size: var(--md-font-size);
+    }
+  }
+
 
 /* -------- */
 /* Side Bar */
@@ -144,6 +164,7 @@ hr {
 /* Sidebar */
 #view {
   overflow-x: hidden;
+  overflow: hidden
 }
 
 #sidebar {
@@ -153,6 +174,7 @@ hr {
   transition: margin 0.4s ease-out;
   min-width: 15rem;
   background-color: var(--sidebar-color);
+  
 }
 
 #content {
@@ -239,6 +261,12 @@ body.sb-sidenav-toggled #view #sidebar {
   .btn-sidebar:hover{
     background-color: var(--body-dim-color);
   }
+  @media (max-height: 768px) {
+    .btn-sidebar{
+      padding: 10px 16px;
+      font-size: var(--md-font-size);
+    }
+  }
 
 
 .btn-sidebar-clicked{
@@ -255,14 +283,27 @@ body.sb-sidenav-toggled #view #sidebar {
 /* ------------------ */
 /* Social Media Icons */
 /* ------------------ */
-.profile-picture{
+.profile-picture {
   width: 9rem;
   border-radius: 100%;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
 }
+  @media (max-height: 768px) {
+    .profile-picture {
+      width: 7.5rem;
+    }
+  }
 
+.icon-row{
+  font-size: var(--xl-font-size);
+}
+@media (max-height: 768px) {
+  .icon-row{
+    font-size: var(--lg-font-size);
+  }
+}
 .icon-youtube {color:#FF0000;}
 
 .icon-instagram {
